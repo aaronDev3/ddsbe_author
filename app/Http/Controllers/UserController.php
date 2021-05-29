@@ -37,6 +37,7 @@ Class UserController extends Controller {
         $rules = [
             'fullname' => 'required|max:150',
             'gender' => 'required|in:Male,Female',
+            'birthday' => 'required|date_format:Y-m-d',
         ];
 
         $this->validate($request,$rules);
@@ -67,6 +68,7 @@ Class UserController extends Controller {
         $rules = [
             'fullname' => 'required|max:150',
             'gender' => 'required|in:Male,Female',
+            'birthday' => 'required|date_format:Y-m-d',
         ];
 
         $this->validate($request, $rules);
